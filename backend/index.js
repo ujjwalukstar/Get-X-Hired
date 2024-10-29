@@ -12,20 +12,12 @@ dotenv.config({});
 
 const app = express();
 
-//new line
-app.use(cors(
-    {
-        origin:['https://get-x-hired-backend.onrender.com'],
-        methods:["POST","GET"],
-        credentials:true
-    }
-    ));
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://get-x-hired-backend.onrender.com',
+    origin:'http://localhost:5173',
     credentials:true
 }
 
