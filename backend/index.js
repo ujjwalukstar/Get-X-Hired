@@ -12,6 +12,14 @@ dotenv.config({});
 
 const app = express();
 
+//new line
+app.use(cors(
+    {
+        origin:['https://get-x-hired-backend.onrender.com'],
+        methods:["POST","GET"],
+        credentials:true
+    }
+    ));
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
