@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://get-x-hired.onrender.com',
+    origin:'https://get-x-hired-backend.onrender.com',
     credentials:true
 }
 
